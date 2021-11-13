@@ -1,0 +1,79 @@
+body {
+  background: #f0f0f0; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px; }
+  .box .item {
+    display: flex;
+    flex: 0 0 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    height: 240px;
+    border-radius: 50px 0 20px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff; }
+    .box .item .items {
+      flex: 1 0 20px;
+      align-self: flex-start;
+      color: #2eb738;
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 8px; }
+      .box .item .items.title {
+        flex: 1 0 80px;
+        align-self: center;
+        font-size: 96px;
+        font-weight: bold;
+        font-family: sans-serif;
+        line-height: 80px; }
+    .box .item.header {
+      background: transparent;
+      box-shadow: none;
+      font-weight: bold;
+      color: #2eb738;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0 25px 20px;
+      flex: 0 0 250px;
+      border-top: 1px solid;
+      border-radius: unset;
+      border-bottom: 1px solid;
+      position: relative; }
+      .box .item.header .headerBox {
+        font-size: 50px; }
+        .box .item.header .headerBox .tip::before, .box .item.header .headerBox .tip::after, .box .item.header .headerBox .subTitle::before, .box .item.header .headerBox .subTitle::after {
+          content: 'x';
+          display: block;
+          position: absolute;
+          font-size: 16px;
+          font-family: monospace; }
+        .box .item.header .headerBox .tip::before {
+          top: -12px;
+          left: -20px; }
+        .box .item.header .headerBox .tip::after {
+          top: -12px;
+          right: -20px; }
+        .box .item.header .headerBox .subTitle {
+          font-size: 20px;
+          font-family: sans-serif; }
+          .box .item.header .headerBox .subTitle::before {
+            bottom: -8px;
+            left: -20px; }
+          .box .item.header .headerBox .subTitle::after {
+            bottom: -8px;
+            right: -20px; }
+
